@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 
 app.get('/', (req, res) => {
-  res.send('hello world')
+  res.render('main')
 })
 
 app.listen(PORT, () => {
